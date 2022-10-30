@@ -1,0 +1,175 @@
+/* Imports */
+/* || Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* || Baloo */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+
+:root {
+    --white: #FFF;
+    --grey: #474554;
+    --light-violet: #ACA7CB;
+    
+    --sans-serif: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    transition: 200ms;
+}
+
+body {
+    font-family: var(--sans-serif);
+    color: var(--grey);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--light-violet);
+}
+
+.nav-logo-container {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2em;
+    font-family: 'Baloo 2', cursive;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li a {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 500ms ease;
+}
+
+.navbar li a:hover i {
+    transform: scale(1.5);
+    color: var(--grey);
+}
+
+.navbar .active i {
+    color: var(--grey);
+    transform: scale(1.5);
+}
+
+/* Contents of the body */
+.body {
+   padding-top: 3em;
+    padding-left: 3em;
+}
+
+.container {
+    padding: 3em auto;
+    margin: 30px 2em;
+}
+
+.container .scr {
+    float: right;
+    margin: 1em;
+    width: 250px;
+}
+
+.container .subheading {
+    margin: 1em 2em;
+}
+
+.feature {
+     margin: 1em 2em;
+}
+
+.container ul {
+    margin-left: 2em;
+}
+
+.container ul li {
+    margin: 1rem;
+}
+
+/* TABLE */
+table * {
+    border: 2px solid var(--grey);
+}
+
+table th {
+    padding: 1em;
+}
+
+table td {
+    padding: 1em;
+}
+
+.button {
+    margin: 1em auto;
+    display: inline-block;
+    padding: 1em 1.5em;
+    color: white;
+    text-decoration: none;
+    background: var(--grey);
+}
+
+.link-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.button i {
+    margin-left: 5px;
+}
+
+.button:hover {
+    background: var(--light-violet);
+}
+
+.button:hover i {
+    transform: translateX(3px);
+}
+
+hr {
+    margin: 1em 3em;
+}
+
+/* GO TO TOP ICON */
+#go-to-top {
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    display: block;
+    background: var(--grey);
+    z-index: 2;
+    text-decoration: none;
+    
+    font-size: 1.3em;
+    color: white;
+    padding: 20px;
+}
+/* GO TO TOP ICON */
+
+footer {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 1em;
+}
